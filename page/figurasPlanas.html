@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -12,7 +13,7 @@
     <header class="header">
         <h1 class="header-h1">Jv</h1>
       <button class="header-button">
-          <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
       </button>
@@ -30,7 +31,16 @@
           </ul>
       </nav>
   </header>
-    
+  <div class="sidebar">
+      <ul>
+          <li class="sidebar-li"><a href="#cuadrado"><img src="/img/figuras/cuadrado.png" alt="cuadrado"></a></li>
+          <li class="sidebar-li"><a href="#rectangulo"><img src="/img/figuras/contorno-de-forma-rectangular.png" alt="rectangulo"></a></li>
+          <li class="sidebar-li"><a href="#triangulo"><img src="/img/figuras/variante-de-contorno-de-triangulo.png" alt="triangulo"></a></li>
+          <li class="sidebar-li"><a href="#rombo"><img src="/img/figuras/rombo.png" alt=""></a></li>
+          <li class="sidebar-li"><a href="#trapecio"><img src="/img/figuras/trapecio.png" alt=""></a></li>
+          <li class="sidebar-li"><a href="#circulo"><img src="/img/figuras/lavado-en-seco.png" alt="circulo"></a></a></li>
+      </ul>
+  </div> 
     <main class="main">
         <h1 class="main-h1">Figuras planas</h1>
         <section class="section-about">
@@ -45,133 +55,259 @@
                   
             </p>
         </section>
-        <section class="main-section main-figure">
+        <section class="main-section main-figure" id="cuadrado">
             <h2 class="main-section-h2">Cuadrado</h2>
            <article class="main-section-article">
             <img src="" alt="" class="main-section-img">
             <p class="main-section-p">
-                todos sus lados son iguales, todos sus ángulos interiores son rectos, sus diagonales son iguales y perpendiculares entre sí.
+                Un cuadrado es una figura geométrica plana que tiene cuatro lados iguales y cuatro ángulos de 90 grados (ángulos rectos). Es un tipo de polígono regular, lo que significa que todos sus lados y ángulos son iguales.
             </p>
+            <h3 class="main-section-h3">Calcular el área de un cuadrado</h3>
             <p class="main-section-p">
-                el perímetro de un cuadrado es cuatro veces el valor del lado. P = 4 · a. área. El área de un cuadrado es igual al cuadrado de la longitud del lado. A= a2. 
+                se puede  utilizar alguna de las siguientes fórmulas: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Área = lado × lado</li>
+                    <li class="main-section-p-li">Área = lado²</li>
+                </ul>
+            </p>
+            <h3 class="main-section-h3">Calcular el perímetro de un cuadrado</h3>
+            <p class="main-section-p">
+                se puede  utilizar alguna de las siguientes fórmulas: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Perímetro = lado + lado + lado + lado</li>
+                    <li class="main-section-p-li">Perímetro = 4 × lado</li>
+                </ul>
             </p>
            </article>
            <article class="article-result">
-               <p>Ingresa el lado del cuadrado en metros</p>
-            <form class="form-cuadrado">
-                <label for="cuadrado"></label>
-                <input id="cuadrado" type="number">
-                <input type="button" value="Resultado">
-                <input type="reset" value="limpiar">
+               <p>Ingresa la medida indicada por cada espacio:</p>
+            <form class=" form form-cuadrado">
+                <label >lado</label>
+                <input  type="number">
+                <input class="form-submit" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset">
             </form>
             <div class="result-cuadrado">
-                <p class="result-pa" >Area: <span>0</span> mtrs.</p>
-                <p class="result-pp">Perimetro: <span>0</span> mtrs.</p>
+                <p class="result-cuadrado-a" >Area: <span>0</span> mtrs.</p>
+                <p class="result-cuadrado-p">Perimetro: <span>0</span> mtrs.</p>
             </div>
 
            </article>
 
         </section>
-        <section class="main-section main-figure">
-            <h2>Rectángulo</h2>
-           <article>
-            <img src="" alt="">
-            <p>
-                todos sus lados son iguales, todos sus ángulos interiores son rectos, sus diagonales son iguales y perpendiculares entre sí.
+        <section class="main-section main-figure" id="rectangulo">
+            <h2 class="main-section-h2">Rectángulo</h2>
+           <article class="main-section-article">
+            <img src="" alt="" class="main-section-img">
+            <p class="main-section-p">
+                Un rectángulo es una figura geométrica plana que tiene cuatro lados y cuatro ángulos rectos (ángulos de 90 grados). Es un paralelogramo con lados opuestos iguales y lados adyacentes perpendiculares entre sí.
+            </p>
+            <h3 class="main-section-h3">calcular el área de un rectángulo</h3>
+            <p class="main-section-p">
+                Se utiliza la siguiente fórmula: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Área = base × altura</li>
+                </ul>
+            </p>
+            <h3 class="main-section-h3">Calcular el perímetro de un rectángulo</h3>
+            <p class="main-section-p">
+                se puede  utilizar alguna de las siguientes fórmulas: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Perímetro = lado1 + lado2 + lado3 + lado4</li>
+                    <li class="main-section-p-li">Perímetro = 2 × (lado1 + lado2)</li>
+                </ul>
             </p>
            </article>
-           <article>
-
-            <form action="">
-
+           <article class="article-result">
+               <p>Ingresa la medida indicada por cada espacio:</p>
+            <form class=" form form-rectangulo">
+                <label >lado 1</label>
+                <input  type="number">
+                <label >lado 2</label>
+                <input  type="number">
+                <input class="form-submit" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset">
             </form>
-            <div>
-                <p>Area: mtrs.</p>
-                <p>Perimetro: mtrs.</p>
+            <div class="result result-cuadrado">
+                <p class=" result-a result-cuadrado-a" >Area: <span>0</span> mtrs.</p>
+                <p class=" result-p result-cuadrado-p">Perimetro: <span>0</span> mtrs.</p>
             </div>
 
            </article>
 
         </section>
-        <section class="main-section main-figure">
-            <h2>Triángulo</h2>
-           <article>
-            <img src="" alt="">
-            <p>
-                todos sus lados son iguales, todos sus ángulos interiores son rectos, sus diagonales son iguales y perpendiculares entre sí.
+        <section class="main-section main-figure" id="triangulo">
+            <h2 class="main-section-h2">Triángulo </h2>
+           <article class="main-section-article">
+            <img src="" alt="" class="main-section-img">
+            <p class="main-section-p">
+                Un triángulo es una figura geométrica plana que tiene tres lados y tres vértices. Puede tener diferentes formas y tamaños, pero siempre tiene tres ángulos cuya suma es igual a 180 grados.
+            </p>
+            <h3 class="main-section-h3">calcular el área de un triángulo</h3>
+            <p class="main-section-p">
+                Se utiliza la siguiente fórmula: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Área = (base × altura) / 2</li>
+                </ul>
+            </p>
+            <h3 class="main-section-h3">Calcular el perímetro de un triángulo</h3>
+            <p class="main-section-p">
+                se puede  utilizar la siguiente fórmula: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Perímetro = lado1 + lado2 + lado3</li>
+                </ul>
             </p>
            </article>
-           <article>
-
-            <form action="">
-
+           <article class="article-result">
+               <p>Ingresa la medida indicada por cada espacio:</p>
+            <form class=" form form-triangulo">
+                <label >base</label>
+                <input  type="number">
+                <label >altura</label>
+                <input  type="number">
+                <input class="form-submit" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset">
             </form>
-            <div>
-                <p>Area: mtrs.</p>
-                <p>Perimetro: mtrs.</p>
+            <div class="result result-triangulo">
+                <p class=" result-a result-triangulo-a" >Area: <span>0</span> mtrs.</p>
+                <p class=" result-p result-triangulo-p">Perimetro: <span>0</span> mtrs.</p>
             </div>
 
            </article>
 
         </section>
-        <section class="main-section main-figure">
-            <h2>Rombo</h2>
-           <article>
-            <img src="" alt="">
-            <p>
-                todos sus lados son iguales, todos sus ángulos interiores son rectos, sus diagonales son iguales y perpendiculares entre sí.
+        <section class="main-section main-figure" id="rombo">
+            <h2 class="main-section-h2">Rombo </h2>
+           <article class="main-section-article">
+            <img src="" alt="" class="main-section-img">
+            <p class="main-section-p">
+                Un rombo es una figura geométrica plana que tiene cuatro lados iguales en longitud, pero sus ángulos no son necesariamente de 90 grados. Es un tipo de paralelogramo con lados iguales, lo que significa que sus lados opuestos son paralelos.
+            </p>
+            <h3 class="main-section-h3">Calcular el área de un  rombo</h3>
+            <p class="main-section-p">
+                Se utiliza la siguiente fórmula: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Área = (diagonal mayor × diagonal menor) / 2</li>
+                    <li class="main-section-p-li" >Las "diagonales" son las líneas que conectan vértices opuestos del rombo. La "diagonal mayor" es la línea más larga, mientras que la "diagonal menor" es la línea más corta.</li>
+                </ul>
+            </p>
+            <h3 class="main-section-h3">Calcular el perímetro de un  rombo</h3>
+            <p class="main-section-p">
+                se puede  utilizar alguna de las siguientes fórmulas: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Perímetro = lado1 + lado2 + lado3 + lado4</li>
+                    <li class="main-section-p-li" >Perímetro = 4 × lado</li>
+                </ul>
             </p>
            </article>
-           <article>
-
-            <form action="">
-
+           <article class="article-result">
+               <p>Ingresa la medida indicada por cada espacio:</p>
+            <form class=" form form-rombo">
+                <label >diagonal mayor</label>
+                <input  type="number">
+                <label >diagonal menor</label>
+                <input  type="number">
+                <input class="form-submit" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset">
             </form>
-            <div>
-                <p>Area: mtrs.</p>
-                <p>Perimetro: mtrs.</p>
+            <div class="result result-rombo">
+                <p class=" result-a result-rombo-a" >Area: <span>0</span> mtrs.</p>
+                <p class=" result-p result-rombo-p">Perimetro: <span>0</span> mtrs.</p>
             </div>
 
            </article>
 
         </section>
-        <section class="main-section main-figure">
-            <h2>Trapecio</h2>
-           <article>
-            <img src="" alt="">
-            <p>
-                todos sus lados son iguales, todos sus ángulos interiores son rectos, sus diagonales son iguales y perpendiculares entre sí.
+        <section class="main-section main-figure" id="trapecio">
+            <h2 class="main-section-h2">Trapecio </h2>
+           <article class="main-section-article">
+            <img src="" alt="" class="main-section-img">
+            <p class="main-section-p">
+                Un trapecio es una figura geométrica plana que tiene cuatro lados, dos de los cuales son paralelos y se llaman bases. Los otros dos lados no son paralelos y se llaman lados no paralelos o lados oblicuos.
+            </p>
+            <h3 class="main-section-h3">Calcular el área de un trapecio</h3>
+            <p class="main-section-p">
+                Se utiliza la siguiente fórmula: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Área = ((base mayor + base menor) × altura) / 2</li>
+                    <li class="main-section-p-li" >Donde la "base mayor" y la "base menor" son las longitudes de las bases del trapecio, y la "altura" es la distancia perpendicular entre las bases. Es importante asegurarse de que la altura sea la distancia perpendicular entre las bases y no la distancia entre los lados no paralelos.</li>
+                </ul>
+            </p>
+            <h3 class="main-section-h3">Calcular el perímetro de un  trapecio</h3>
+            <p class="main-section-p">
+                se puede  utilizar  la siguiente fórmula: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Perímetro = lado1 + lado2 + lado3 + lado4</li>
+                    <li class="main-section-p-li" >Dado que los lados no paralelos pueden tener diferentes longitudes, es necesario medir todos los lados para calcular el perímetro del trapecio. </li>
+                </ul>
             </p>
            </article>
-           <article>
-
-            <form action="">
-
+           <article class="article-result">
+               <p>Ingresa la medida indicada por cada espacio:</p>
+            <form class=" form form-trapecio">
+                <label >base mayor</label>
+                <input  type="number">
+                <label >base menor</label>
+                <input  type="number">
+                <label >altura</label>
+                <input  type="number">
+                <label >lado1</label>
+                <input  type="number">
+                <label >lado2</label>
+                <input  type="number">
+                <label >lado3</label>
+                <input  type="number">
+                <label >lado4</label>
+                <input  type="number">
+                <input class="form-submit" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset">
             </form>
-            <div>
-                <p>Area: mtrs.</p>
-                <p>Perimetro: mtrs.</p>
+            <div class="result result-trapecio">
+                <p class=" result-a result-trapecio-a" >Area: <span>0</span> mtrs.</p>
+                <p class=" result-p result-trapecio-p">Perimetro: <span>0</span> mtrs.</p>
             </div>
 
            </article>
 
         </section>
-        <section class="main-section main-figure">
-            <h2>Circulo</h2>
-           <article>
-            <img src="" alt="">
-            <p>
-                todos sus lados son iguales, todos sus ángulos interiores son rectos, sus diagonales son iguales y perpendiculares entre sí.
+        <section class="main-section main-figure" id="circulo">
+            <h2 class="main-section-h2">Circulo </h2>
+           <article class="main-section-article">
+            <img src="" alt="" class="main-section-img">
+            <p class="main-section-p">
+                Un círculo es una figura geométrica plana en la que todos los puntos de su perímetro están equidistantes del centro. La distancia constante entre cualquier punto del círculo y su centro se llama radio (r), y el diámetro (d) es la distancia que atraviesa el centro y toca dos puntos opuestos del círculo.
+            </p>
+            <h3 class="main-section-h3">Calcular el área de un  círculo</h3>
+            <p class="main-section-p">
+                Se utiliza la siguiente fórmula: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Área = π(PI) × radio²</li>
+                    <li class="main-section-p-li" >Donde "π" (pi) es una constante aproximada a 3.14159, y "radio" es la longitud del radio del círculo.</li>
+                </ul>
+            </p>
+            <h3 class="main-section-h3">Calcular el perímetro o circunferencia de un  círculo</h3>
+            <p class="main-section-p">
+                se puede  utilizar alguna de las siguientes fórmulas: 
+                <ul class="main-section-p-ul">
+                    <li class="main-section-p-li">Perímetro (circunferencia) = 2 × π × radio</li>
+                    <li class="main-section-p-li" >si se conoce el diámetro en lugar del radio:</li>
+                    <li class="main-section-p-li" >La relación entre el radio (r) y el diámetro (d) de un círculo es:</li>
+                    <li class="main-section-p-li" >d = 2 × r</li>
+
+                </ul>
             </p>
            </article>
-           <article>
-
-            <form action="">
-
+           <article class="article-result">
+               <p>Ingresa la medida indicada por cada espacio:</p>
+            <form class=" form form-circulo">
+                <label >radio</label>
+                <input  type="number">
+                <input class="form-submit" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset">
             </form>
-            <div>
-                <p>Area: mtrs.</p>
-                <p>Perimetro: mtrs.</p>
+            <div class="result result-circulo">
+                <p class=" result-a result-circulo-a" >Area: <span>0</span> mtrs.</p>
+                <p class=" result-p result-circulo-p">Perimetro (circuferencia): <span>0</span> mtrs.</p>
             </div>
 
            </article>
