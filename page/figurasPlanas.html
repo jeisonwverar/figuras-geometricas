@@ -83,7 +83,7 @@
                <p>Ingresa la medida indicada por cada espacio:</p>
             <form class=" form form-cuadrado">
                 <label >lado</label>
-                <input  type="number">
+                <input  type="number" min="1" pattern="^[0-9]+">
                 <input class="form-submit" type="button" value="Resultado">
                 <input type="reset" value="Limpiar" class="form-reset">
             </form>
@@ -124,13 +124,13 @@
                 <label >lado 1</label>
                 <input  type="number">
                 <label >lado 2</label>
-                <input  type="number">
-                <input class="form-submit" type="button" value="Resultado">
-                <input type="reset" value="Limpiar" class="form-reset">
+                <input  type="number" min="1" pattern="^[0-9]+" required >
+                <input class="form-submit form-submit-rectangulo" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class=" form-reset form-reset-rectangulo">
             </form>
-            <div class="result result-cuadrado">
-                <p class=" result-a result-cuadrado-a" >Area: <span>0</span> mtrs.</p>
-                <p class=" result-p result-cuadrado-p">Perimetro: <span>0</span> mtrs.</p>
+            <div class="result result-rectangulo">
+                <p class="result-rectangulo-a" >Area: <span>0</span> mtrs.</p>
+                <p class="result-rectangulo-p">Perimetro: <span>0</span> mtrs.</p>
             </div>
 
            </article>
@@ -165,8 +165,14 @@
                 <input  type="number">
                 <label >altura</label>
                 <input  type="number">
-                <input class="form-submit" type="button" value="Resultado">
-                <input type="reset" value="Limpiar" class="form-reset">
+                <label >lado 1</label>
+                <input  type="number">
+                <label >lado 2</label>
+                <input  type="number">
+                <label >lado 3</label>
+                <input  type="number">
+                <input class="form-submit form-submit-triangulo " type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset form-reset-triangulo">
             </form>
             <div class="result result-triangulo">
                 <p class=" result-a result-triangulo-a" >Area: <span>0</span> mtrs.</p>
@@ -207,8 +213,10 @@
                 <input  type="number">
                 <label >diagonal menor</label>
                 <input  type="number">
-                <input class="form-submit" type="button" value="Resultado">
-                <input type="reset" value="Limpiar" class="form-reset">
+                <label >lado</label>
+                <input  type="number">
+                <input class="form-submit form-submit-rombo" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset form-reset-rombo">
             </form>
             <div class="result result-rombo">
                 <p class=" result-a result-rombo-a" >Area: <span>0</span> mtrs.</p>
@@ -259,8 +267,8 @@
                 <input  type="number">
                 <label >lado4</label>
                 <input  type="number">
-                <input class="form-submit" type="button" value="Resultado">
-                <input type="reset" value="Limpiar" class="form-reset">
+                <input class="form-submit form-submit-trapecio" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset formo-reset-trapecio">
             </form>
             <div class="result result-trapecio">
                 <p class=" result-a result-trapecio-a" >Area: <span>0</span> mtrs.</p>
@@ -302,8 +310,8 @@
             <form class=" form form-circulo">
                 <label >radio</label>
                 <input  type="number">
-                <input class="form-submit" type="button" value="Resultado">
-                <input type="reset" value="Limpiar" class="form-reset">
+                <input class="form-submit form-submit-circulo" type="button" value="Resultado">
+                <input type="reset" value="Limpiar" class="form-reset form-reset-circulo">
             </form>
             <div class="result result-circulo">
                 <p class=" result-a result-circulo-a" >Area: <span>0</span> mtrs.</p>
