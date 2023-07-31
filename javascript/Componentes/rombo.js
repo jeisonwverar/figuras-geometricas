@@ -1,9 +1,10 @@
 
-const area=(dmenor,dmayor)=>{
+const area=(dmenor=0,dmayor=0)=>{
+
     return (dmenor*dmayor)/2;
 }
 
-const perimetro=(l1)=>{
+const perimetro=(l1=0)=>{
     return 4*parseInt(l1);
 }
 
@@ -26,8 +27,8 @@ const Rombo=(input,submit,result,reset)=>{
     //evento click
 
    document.addEventListener('click',(e)=>{
-    e.preventDefault();
-    e.stopPropagation(false)
+   
+   
      //   console.log(e.target)
        if(e.target===submitForm){
        // console.log(e.target)
@@ -37,7 +38,7 @@ const Rombo=(input,submit,result,reset)=>{
                  alert("el numero ingresado tiene que ser mayor a 0")
                 return;
              }
-                console.log(e.value)
+              
             })
             //console.log(inputValue)
             //manejo de errores futuros   

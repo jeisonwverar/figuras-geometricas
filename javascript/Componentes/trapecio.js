@@ -12,7 +12,7 @@ const perimetro=(l1,l2,l3,l4)=>{
 const trapecio=(input,submit,result,reset)=>{
     
    
-    const inputtrapecio= document.querySelectorAll(input);
+    const inputTrapecio= document.querySelectorAll(input);
     const submitForm=document.querySelector(submit);
     const resulttrapecio = document.querySelectorAll(result);
     const resetButton=document.querySelector(reset);
@@ -21,16 +21,16 @@ const trapecio=(input,submit,result,reset)=>{
 
 
 
-    //console.log(inputtrapecio,submitForm,resulttrapecio,resetButton);
+    //console.log(inputTrapecio,submitForm,resulttrapecio,resetButton);
 
     //evento click
 
    document.addEventListener('click',(e)=>{
-    e.preventDefault();
+    
     
        if(e.target===submitForm){
          
-        inputtrapecio.forEach((e)=>{
+        inputTrapecio.forEach((e)=>{
                 
              if( e.value <= 0){
                  alert("el numero ingresado tiene que ser mayor a 0")
@@ -42,8 +42,8 @@ const trapecio=(input,submit,result,reset)=>{
             //manejo de errores futuros   
             
         }
-        resulttrapecio[0].textContent=area(inputtrapecio[0].value,inputtrapecio[1].value,inputtrapecio[2].value);
-        resulttrapecio[1].textContent=perimetro(inputtrapecio[3].value,inputtrapecio[4].value,inputtrapecio[5].value,inputtrapecio[6].value);
+        resulttrapecio[0].textContent=area(inputTrapecio[0].value,inputTrapecio[1].value,inputTrapecio[2].value);
+        resulttrapecio[1].textContent=perimetro(inputTrapecio[3].value,inputTrapecio[4].value,inputTrapecio[5].value,inputTrapecio[6].value);
 
 
     if(e.target===resetButton){

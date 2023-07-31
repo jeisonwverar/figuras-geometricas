@@ -12,7 +12,7 @@ const perimetro=(l1,l2,l3)=>{
 const triangulo=(input,submit,result,reset)=>{
     
    
-    const inputtriangulo= document.querySelectorAll(input);
+    const inputTriangulo= document.querySelectorAll(input);
     const submitForm=document.querySelector(submit);
     const resulttriangulo = document.querySelectorAll(result);
     const resetButton=document.querySelector(reset);
@@ -21,29 +21,29 @@ const triangulo=(input,submit,result,reset)=>{
 
 
 
-    //console.log(inputtriangulo,submitForm,resulttriangulo,resetButton);
+    //console.log(inputTriangulo,submitForm,resulttriangulo,resetButton);
 
     //evento click
 
    document.addEventListener('click',(e)=>{
-    e.preventDefault();
+    
     
        if(e.target===submitForm){
          
-        inputtriangulo.forEach((e)=>{
+        inputTriangulo.forEach((e)=>{
                 
              if( e.value <= 0){
                  alert("el numero ingresado tiene que ser mayor a 0")
                 return;
              }
-                console.log(e.value)
+               
             })
             //console.log(inputValue)
             //manejo de errores futuros   
             
         }
-        resulttriangulo[0].textContent=area(inputtriangulo[0].value,inputtriangulo[1].value);
-        resulttriangulo[1].textContent=perimetro(inputtriangulo[2].value,inputtriangulo[3].value,inputtriangulo[4].value);
+        resulttriangulo[0].textContent=area(inputTriangulo[0].value,inputTriangulo[1].value);
+        resulttriangulo[1].textContent=perimetro(inputTriangulo[2].value,inputTriangulo[3].value,inputTriangulo[4].value);
 
 
     if(e.target===resetButton){

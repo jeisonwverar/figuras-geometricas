@@ -1,10 +1,10 @@
 
 const area=(num)=>{
-    return( Math.pow(num,2));
+    return parseInt( Math.pow(num,2));
 }
 
 const perimetro=(num)=>{
-    return num*4;
+    return parseInt(num*4);
 }
 
 
@@ -12,7 +12,7 @@ const perimetro=(num)=>{
 const cuadrado=(input,submit,result,reset)=>{
     
    
-    const inputCuadrado= document.querySelectorAll(input);
+    const inputCuadrado= document.querySelector(input);
     const submitForm=document.querySelector(submit);
     const resultCuadrado = document.querySelectorAll(result);
     const resetButton=document.querySelector(reset);
@@ -28,7 +28,7 @@ const cuadrado=(input,submit,result,reset)=>{
    document.addEventListener('click',(e)=>{
 
        if(e.target===submitForm){
-        let inputValue=inputCuadrado[0].value;
+        let inputValue=inputCuadrado.value;
         //console.log(inputValue)
         //manejo de errores futuros
         if(inputValue<=0 ){
